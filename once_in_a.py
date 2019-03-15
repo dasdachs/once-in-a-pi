@@ -59,7 +59,7 @@ def find_lookup_string(lookup_string, pi='355/113'):
         sys.stdout.write('\r')
         sys.stdout.flush()
     index = index_of_pi - len(lookup_string)
-    return (lookup_string, pi, string_as_ord, index_of_pi)
+    return (string, pi, string_as_ord, index_of_pi)
 
 
 if __name__ == '__main__':
