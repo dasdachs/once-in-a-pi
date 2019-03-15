@@ -84,7 +84,7 @@ if __name__ == '__main__':
     )
     args = parser.parse_args()
     approximation = args.pi if args.pi else '355/113'
-    lookup_string, pi, string_as_ord, index_of_pi = find_lookup_string(args.lookup_string, aproximation)
+    lookup_string, pi, string_as_ord, index_of_pi = find_lookup_string(args.lookup_string, approximation)
 
     if not args.to:
         print(f'Lookup string was found at {index_of_pi}')
