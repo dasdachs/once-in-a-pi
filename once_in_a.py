@@ -33,7 +33,7 @@ def find_lookup_string(lookup_string, pi='355/113'):
     string_as_ord = "".join(
         [str(ord(letter)) for letter in string]
     )
-    print(f'Looking for {lookup_string} ...')
+    print(f'Looking for {string} ...')
     print(f'... which is {string_as_ord} for a computer')
 
     current_numbers = ''
