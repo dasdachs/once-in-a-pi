@@ -24,7 +24,7 @@ optional arguments:
 
 ## Use
 
-Make sure to have [Python 3](https://www.python.org/downloads/)installed.
+Make sure to have [Python 3](https://www.python.org/downloads/) installed.
 
 1. Get the code
   ```bash
@@ -37,5 +37,5 @@ Make sure to have [Python 3](https://www.python.org/downloads/)installed.
 2. Run the code
   ```bash
   python3 once_in_a.py [lookup] # POSIX
-  python once_in_a.py [lookup] # Windows
+  python once_in_a.py [lookup]  # Windows
   ```
