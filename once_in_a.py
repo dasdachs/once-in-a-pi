@@ -29,7 +29,6 @@ import sys
 def find_lookup_string(lookup_string, pi='355/113'):
     number, divider = [int(num) for num in pi.split('/')]
     string = " ".join(lookup_string)
-
     string_as_ord = "".join(
         [str(ord(letter)) for letter in string]
     )
