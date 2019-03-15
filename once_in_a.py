@@ -75,7 +75,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '--pi',
         type=str,
-        help='Set your prefered aproximation of pi (default: 355/113)'
+        help='Set your prefered approximation of π (default: 355/113)'
     )
     parser.add_argument(
         '--to',
@@ -83,15 +83,15 @@ if __name__ == '__main__':
         help='Path to the file to write the results to.'
     )
     args = parser.parse_args()
-    aproximation = args.pi if args.pi else '355/113'
+    approximation = args.pi if args.pi else '355/113'
     lookup_string, pi, string_as_ord, index_of_pi = find_lookup_string(args.lookup_string, aproximation)
-    
+
     if not args.to:
         print(f'Lookup string was found at {index_of_pi}')
         print(f'This is the string as a value of π 3. ... {string_as_ord} ...')
     else:
-        with open(args.to, 'w') f:
+        with open(args.to, 'w') as f:
             f.write(f'Looking for {lookup_string} in π\n')
-            f.write(f'Lookup string was found at {index_of_pi}\n'))
+            f.write(f'Lookup string was found at {index_of_pi}\n')
             f.write(f'This is the string as a value of π 3. ... {string_as_ord} ...')
 
